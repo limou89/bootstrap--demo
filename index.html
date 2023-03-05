@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Test</title>
+    <script src="bootstrap/jquery.js"></script>
+    <script src="bootstrap/js/bootstrap.bundle.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap-grid.css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap-reboot.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css">
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"> </script>
+    <script src="bootstrap/DPlayer-master/DPlayer-master/dist/DPlayer.min.js"></script>
+
+
+</head>
+<body>
+<!--导航-->
+<nav>
+    <div class="container">
+        <div class="row">
+            <!--加阴影-->
+            <div class="col shadow-sm">
+                <nav class="navbar p-1 navbar-expand-lg navbar-light bg-white">
+                    <!--小屏幕不加logo-->
+                    <a class="navbar-brand navbar-toggler border-0" href="#">
+                        <!--加载图片做logo-->
+                        <img src="image/4.jpeg" class="img-fluid" style="max-width: 90px;"/>
+                    </a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportContent"
+                            aria-controls="navbarSupportContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportContent">
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#">首页</a><span class="sr-only">(current)</span>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">链接1</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">链接2</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#"  id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+                                aria-expanded="false">
+                                    下拉菜单
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item">item1</a>
+                                    <a class="dropdown-item">item2</a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item">item3</a>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">不可用的按钮</a>
+                            </li>
+                        </ul>
+                        <form class="form-inline my-2 my-lg-0">
+                            <input class="form-control  mr-sm-2" type="search" placeholder="点我搜索"
+                                   aria-label="Search">
+                            <button class="btn btn-outline-success my-2 my-sm-0 " type="submit">点我搜索</button>
+                        </form>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+</nav>
+<!--头部-->
+<header class="mt-4 d-none d-lg-block">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <a href="#"><img src="image/4.jpeg" style="max-width: 120px;height: auto;" ></a>
+            </div>
+            <div class="col">
+                <blockquote class="blockquote text-center"><p>我是网站的标语</p></blockquote>
+            </div>
+            <div class="col">
+                <div class="text-right">
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-danger dropdown" data-toggle="dropdown" aria-haspopup="true"
+                        aria-expanded="false">下拉菜单一</button>
+                        <div class="dropdown-menu">
+                        <a class="dropdown-item">item1</a>
+                        <a class="dropdown-item">item2</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item">item3</a>
+                        </div>
+                    </div>
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-dark dropdown" data-toggle="dropdown" aria-haspopup="true"
+                                aria-expanded="false">下拉菜单二</button>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item">item1</a>
+                            <a class="dropdown-item">item2</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item">item3</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<!--轮播图-->
+<section class="mt-4">
+    <div class="container">
+        <div class="col">
+            <!-- Swiper -->
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="image/1.jpeg" class="w-25"></div>
+                    <div class="swiper-slide"><img src="image/2.jpeg" class="w-25"></div>
+                    <div class="swiper-slide"><img src="image/3.jpeg" class="w-25"></div>
+                    <div class="swiper-slide"><img src="image/4.jpeg" class="w-25"></div>
+                    <div class="swiper-slide"><img src="image/5.jpeg" class="w-25"></div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--播放视频和选项-->
+<section class="mt-4">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div>
+                    <h4 class="d-inline">选择视频播放</h4>
+                </div>
+                <small class="text-muted pl-2">副标题</small>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12 col-lg-8">
+                <div class="main-content">
+                    <ul class="w-75">
+                        <li>
+                            <!--使用dplayer播放视频-->
+                            <div id="dplayer1" style="width: 100%;height:350px;"></div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-sm-12 col-lg-4">
+                <!--使用卡片-->
+                <div class="card w-100 boreder-0 shadow bg-light" style="height: 300px;">
+                    <div class="card-header d-flex bg-white border-top border-warning border-bottom-0">
+                    <!--这里使用行级标签-->
+                        <h5 class="d-inline-block">卡片头部<small class="text-muted ml-2">副标题</small></h5>
+                    <!--行级元素,居右-->
+                        <div class="d-inline-block ml-auto">
+                        <a href="#" style="font-size:14px;" class="text-black-50">more>></a>
+                        </div>
+                    </div>
+                    <!--使用列表组-->
+                    <ul class="list-group" style="line-height: 10px;font-size: 20px;">
+                        <li class="list-group-item py-1"><a href="#" class="card-link text-dark text-truncate">
+                            <span class="badge badge-danger">1</span>第一个视频</a></li>
+                        <li class="list-group-item py-1"><a href="#" class="card-link text-dark text-truncate">
+                            <span class="badge badge-secondary">2</span>第二个视频</a></li>
+                        <li class="list-group-item py-1"><a href="#" class="card-link text-dark text-truncate">
+                            <span class="badge badge-secondary">3</span>第三个视频</a></li>
+                        <li class="list-group-item py-1"><a href="#" class="card-link text-dark text-truncate">
+                            <span class="badge badge-dark">4</span>第四个视频</a></li>
+                        <li class="list-group-item py-1"><a href="#" class="card-link text-dark text-truncate">
+                            <span class="badge badge-dark">5</span>第五个视频</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--尾部-->
+<footer class="bg-dark text-light small">
+<div class="container">
+    <div class="row pt-3 pb-5">
+        <div class="col-sm-12 col-md-10">
+            <div class="pt-3">
+                <p class="mb-4">介绍文字介绍文字介绍文字介绍文字</p>
+                    <ul class="nav">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link text-white pl-0">item1</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link text-white pl-0">item2</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link text-white pl-0">item3</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link text-white pl-0">item4</a>
+                        </li>
+                    </ul>
+            </div>
+            <div class="text-muted">
+                <i>@2099-3055</i>版权信息<span class="mx-3">版权信息</span><a href="#" class="text-muted">xxxx</a>
+            </div>
+        </div>
+        <!--偏右地方-->
+        <div class="col-sm-12 col-md-2 text-md-right text-center p-0 ">
+            <figure class="figure mt-3">
+                <img src="image/5.jpeg" class="figure img-thumbnail" style="max-width: 50%">
+                <figcaption class="figure-caption text-center">图片下方的文字</figcaption>
+            </figure>
+        </div>
+    </div>
+</div>
+</footer>
+
+
+<!-- Initialize Swiper -->
+<script>
+    var swiper = new Swiper(".mySwiper", {
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+    });
+    //dplayer播放器
+    var dp1= new DPlayer({
+//里面是json元素
+//绑定元素
+        container:document.getElementById('dplayer1'),
+        video:{
+//播放地址
+            url:'xxxx视频',
+//封面
+            pic:'image/3.jpeg',
+//视频互斥关系
+            mutex:true
+        }
+    })
+</script>
+
+</body>
+</html>
